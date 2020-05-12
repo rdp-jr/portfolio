@@ -18,6 +18,14 @@
 		urlCode: "https://github.com/rdp-jr/superhero-wiki",
 		picture: "/static/img/screen-superhero.png"
   };
+
+  const project3 = {
+    name: "Street Food Wars",
+    description: "A Turn-based, role-playing game built in Java",
+		urlCode: "https://github.com/rdp-jr/street-food-wars",
+		picture: "/static/img/screen-streetfoodwars.png"
+  };
+
 </script>
 
 <style>
@@ -134,11 +142,20 @@
     class="d-flex flex-column justify-content-center align-items-center
     s-projects">
     <h2>Projects</h2>
-    <div class="d-flex justify-content-center align-items-center">
-      <Project {...project1} />
-      <Project {...project2} />
 
+    <div class="row">
+    <div class="col">
+      <Project {...project1} />
     </div>
+    <div class="col">
+      <Project {...project2} />
+    </div>
+    <div class="col">
+      <Project {...project3} />
+    </div>
+    </div>
+
+    
   </section>
 </main>
 

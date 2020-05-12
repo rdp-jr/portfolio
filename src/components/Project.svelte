@@ -1,8 +1,8 @@
 <script>
   export let name = "Project Name";
   export let description = "Project description";
-  export let urlView = "https://github.com/rdp-jr";
-  export let urlCode = "https://github.com/rdp-jr";
+  export let urlView;
+  export let urlCode;
   export let picture;
 </script>
 
@@ -37,12 +37,16 @@ h3, p {
   <p>{description}</p>
 
 <div class="d-flex justify-content-center">
+
       <a href={urlCode} target="_noblank">
         <i class="fas fa-code" />
       </a>
-      <a href={urlView} target="_noblank">
+      {#if urlView}
+        <a href={urlView} target="_noblank">
         <i class="far fa-eye" />
       </a>
+      {/if}
+      
     </div>
 
 
