@@ -17,7 +17,8 @@
   } */
 
   .img-fluid {
-    max-width: 80%;
+    max-width: 70%;
+    max-height: 20vh;
     /* border-radius: 100%; */
     border-radius: 8%;
     transition: 0.25s;
@@ -28,6 +29,15 @@ h3, p {
   font-family: "Jost", sans-serif;
 		text-align: center;
 }
+
+.icon {
+  font-size: 1.25em;
+  color: grey;
+}
+
+.icon:hover {
+  color: black;
+}
 </style>
 
 <div class="project-card d-flex justify-content-center flex-column align-items-center">
@@ -36,14 +46,14 @@ h3, p {
   <img class="img-fluid" src={picture} alt={`${name} - ${description}`} />
   <p>{description}</p>
 
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-around w-25">
 
       <a href={urlCode} target="_noblank">
-        <i class="fas fa-code" />
+        <i class="fas fa-code icon" />
       </a>
       {#if urlView}
         <a href={urlView} target="_noblank">
-        <i class="far fa-eye" />
+        <i class="far fa-eye icon" />
       </a>
       {/if}
       
@@ -51,24 +61,3 @@ h3, p {
 
 
 </div>
-
-<!-- <div class="card">
-  <div class="card-title d-flex justify-content-center"><h1>{name}</h1></div>
-  <div class="card-body">
-    {#if picture}
-      <img
-        class="img-fluid"
-        src={picture}
-        alt={`${name} - ${description}`} />
-    {/if}
-    
-    <div class="d-flex justify-content-around">
-      <a href={urlCode} target="_noblank">
-        <i class="fas fa-code" />
-      </a>
-      <a href={urlView} target="_noblank">
-        <i class="far fa-eye" />
-      </a>
-    </div>
-  </div>
-</div> -->

@@ -33,7 +33,8 @@
   h2,
   h3,
   p,
-  h5 {
+  h5,
+  li {
 		font-family: "Jost", sans-serif;
 		text-align: center;
   }
@@ -42,9 +43,11 @@
   }
 
   .s-skills {
-    height: 50vh;
+    /* padding-top: 5em; */
+    height: 100%;
 		background-color: var(--redColor);
-		color: white;
+    color: white;
+    /* padding-bottom: 5em; */
   }
 
   footer {
@@ -54,6 +57,7 @@
 
   .a-icon {
     color: white;
+    font-size: 2em;
   }
 
   .a-icon:hover {
@@ -63,6 +67,31 @@
   .h-contact {
     color: white;
   }
+
+  .projectGrid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    /* grid-template-columns:repeat(3, 1fr); */
+    display: grid;
+    align-items: center;
+    grid-row-gap: 1rem;
+  }
+
+  .a-mail {
+    color: white;
+  }
+
+  .a-mail:hover {
+    text-decoration: none;
+    color: black;
+    /* background-size: 4px 50px; */
+    /* background-size: 100px 100px; */
+  }
+
+  li {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+
 </style>
 
 <header>
@@ -86,8 +115,8 @@
     class="d-flex flex-column justify-content-center align-items-center s-skills">
     <h2>Skills</h2>
 
-    <div class="row no-gutter">
-      <div class="col">
+    <div class="row no-gutter w-75">
+      <div class="col d-flex flex-column justify-content-center align-items-center">
         <h3>Languages</h3>
         <ul>
           <li>
@@ -112,7 +141,7 @@
           </li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col d-flex flex-column justify-content-center align-items-center">
         <h3>Libraries & Frameworks</h3>
         <ul>
           <li>Flask</li>
@@ -125,25 +154,14 @@
 
       </div>
 
-      <div class="col">
-        <h3>Creative Suite</h3>
-        <ul>
-          <li>Adobe Photoshop</li>
-          <li>Adobe Illustrator</li>
-          <li>Adobe After Effects</li>
-          <li>Adobe Premiere Pro</li>
-        </ul>
-
-      </div>
-
     </div>
   </section>
   <section
     class="d-flex flex-column justify-content-center align-items-center
-    s-projects">
+    s-projects mt-5">
     <h2>Projects</h2>
 
-    <div class="row">
+    <div class="w-100 projectGrid">
     <div class="col">
       <Project {...project1} />
     </div>
@@ -159,13 +177,13 @@
   </section>
 </main>
 
-<footer class="d-flex flex-column justify-content-center align-items-center">
+<footer class="d-flex flex-column justify-content-center align-items-center mt-5">
 
-  <h5 class="h-contact">
+  <h5 class="h-contact pt-3">
     Contact me at
-    <a href="mailto:rdprincipio.jr@gmail.com">rdprincipio.jr@gmail.com</a>
+    <a href="mailto:rdprincipio.jr@gmail.com" class="a-mail">rdprincipio.jr@gmail.com</a>
   </h5>
-  <div>
+  <div class="w-25 d-flex justify-content-around">
     <a
       class="a-icon"
       href="https://www.linkedin.com/in/rdprincipiojr/"
