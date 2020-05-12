@@ -43,7 +43,8 @@
   }
 
   .s-skills {
-    /* padding-top: 5em; */
+    padding-top: 2em;
+    padding-bottom: 1em;
     height: 100%;
 		background-color: var(--redColor);
     color: white;
