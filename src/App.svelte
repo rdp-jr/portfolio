@@ -1,68 +1,68 @@
 <script>
-  import Landing from "./components/Landing.svelte";
   import Project from "./components/Project.svelte";
+  import Tech from "./components/Tech.svelte";
 
   const project1 = {
     name: "T3",
-    description: "Multiplayer Tic Tac Toe build using Express and socket.io",
+    shortDesc: "Realtime Multiplayer Tic Tac Toe",
+    longDesc: "built with Socket.IO to learn real-time communication between servers and clients",
     urlView: "https://t3.surge.sh/",
 		urlCode: "https://github.com/rdp-jr/t3-client",
-		picture: "/static/img/screen-t3.png"
+    picture: "/static/img/screen-t3.png",
+    tech_list: ["react-original", "express-original", "nodejs-plain", "javascript-plain", ]
   };
 
   const project2 = {
     name: "Superhero Wiki",
-    description:
-      "Database of superheroes and villains from different universes from an external API",
+    shortDesc: "Database of superheroes and villains",
+    longDesc: "from different universes to understand using external APIs and server-side rendering using Next.js",
     urlView: "https://superhero-wiki.now.sh/",
 		urlCode: "https://github.com/rdp-jr/superhero-wiki",
-		picture: "/static/img/screen-superhero.png"
+    picture: "/static/img/screen-superhero.png",
+    tech_list: ["javascript-plain", ]
   };
 
   const project3 = {
     name: "Street Food Wars",
-    description: "A Turn-based, role-playing game built in Java",
-		urlCode: "https://github.com/rdp-jr/street-food-wars",
-		picture: "/static/img/screen-streetfoodwars.png"
+    shortDesc: "A Turn-based fighting game with Street Food characters",
+    longDesc: "built in Java as a course requirement for Object Oriented Programming",
+    urlCode: "https://github.com/rdp-jr/street-food-wars",
+    picture: "/static/img/screen-streetfoodwars.png",
+    tech_list: ["java-plain", "illustrator-plain"]
+  };
+
+  const project4 = {
+    name: "StudyUP REST API",
+    shortDesc: "A simple REST API",
+    longDesc: "built with Flask Framework, Flask RESTful, and ORM Flask-SQLAlchemy for StudyUP, a course requirement for Software Engineering",
+    urlCode: "https://github.com/rdp-jr/studyup-rest-api",
+    picture: "/static/img/screen-studyuprestapi.png",
+    tech_list: ["python-plain",]
   };
 
 </script>
 
 <style>
-  h1,
   h2,
-  h3,
-  p,
-  h5,
-  li {
+  h5 {
 		font-family: "Jost", sans-serif;
-		text-align: center;
-  }
-  .s-about {
-    height: 50vh;
-  }
-
-  .s-skills {
-    padding-top: 2em;
-    padding-bottom: 1em;
-    height: 100%;
-		background-color: var(--redColor);
+    text-align: center;
     color: white;
-    /* padding-bottom: 5em; */
   }
-
+  
+  
   footer {
-		background-color: var(--redColor);
 		color: white;
   }
 
   .a-icon {
     color: white;
     font-size: 2em;
+    transition: all .2s;
   }
 
   .a-icon:hover {
-    color: black;
+    color: var(--redColor);
   }
 
   .h-contact {
@@ -78,91 +78,73 @@
   }
 
   .a-mail {
-    color: white;
+    color: var(--redColor);
+    transition: all .2s;
   }
 
   .a-mail:hover {
     text-decoration: none;
-    color: black;
-    /* background-size: 4px 50px; */
-    /* background-size: 100px 100px; */
+    color: white;
+    
   }
 
-  li {
-    font-weight: 500;
-    font-size: 1.5em;
+ 
+
+
+
+  .h-name {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
   }
+
+  
+
+  .text-red {
+    color: var(--redColor);
+  }
+
+  
 
 </style>
 
-<header>
-  <Landing />
-</header>
-<main>
-  <section
-    class="d-flex flex-column justify-content-center align-items-center s-about">
-    <h2 class="">
-      Hey, I'm
-      <strike>Roberto</strike>
-      Obee.
-    </h2>
-    <h3>
-      I'm an undergraduate computer science student from the University of the
-      Philippines Diliman.
-    </h3>
-    <h3>I love building cool stuff.</h3>
+
+<main class="pb-5">
+  <section class="pt-4 mb-4">
+      <h1 class="h-name">ROBERTO PRINCIPIO JR.</h1>
   </section>
-  <section
-    class="d-flex flex-column justify-content-center align-items-center s-skills">
-    <h2>Skills</h2>
-
-    <div class="row no-gutter w-75">
-      <div class="col d-flex flex-column justify-content-center align-items-center">
-        <h3>Languages</h3>
-        <ul>
-          <li>
-            <i class="fab fa-html5" />
-            HTML5
-          </li>
-          <li>
-            <i class="fab fa-css3-alt" />
-            CSS
-          </li>
-          <li>
-            <i class="fab fa-js-square" />
-            JavaScript
-          </li>
-          <li>
-            <i class="fab fa-java" />
-            Java
-          </li>
-          <li>
-            <i class="fab fa-python" />
-            Python
-          </li>
-        </ul>
-      </div>
-      <div class="col d-flex flex-column justify-content-center align-items-center">
-        <h3>Libraries & Frameworks</h3>
-        <ul>
-          <li>Flask</li>
-          <li>React</li>
-          <li>Next.js</li>
-          <li>Bootstrap 4</li>
-          <li>Node.js</li>
-          <li>Express</li>
-        </ul>
-
-      </div>
-
+ 
+  <section>
+    <h5> 
+    I'm a <span class="text-red">software engineer</span> based in the Philippines. </h5>
+    <h5>I'm an undergraduate student currently taking computer science
+    in the University of the Philippines Diliman. </h5>
+  </section>
+ 
+  <section class="pt-5 mt-5">
+    <h2 class="mb-4">Tech <span class="text-red">Stack</span></h2>
+    <div class="h5 text-center">
+      <Tech name="python-plain"/>
+      <!-- <Tech name="django-plain"/> -->
+      <Tech name="html5-plain"/>
+      <Tech name="css3-plain"/>
+      <Tech name="javascript-plain"/>
+      <Tech name="nodejs-plain"/>
+      <Tech name="express-original"/>
+      <Tech name="git-plain"/>
+      <Tech name="mysql-plain"/>
     </div>
   </section>
-  <section
-    class="d-flex flex-column justify-content-center align-items-center
-    s-projects mt-5">
-    <h2>Projects</h2>
+ 
+  <section class="pt-5 mt-5">
+  <h2 class="mb-4">Projects</h2>
+  </section>
 
-    <div class="w-100 projectGrid">
+ 
+  
+  <div class="w-100 projectGrid">
     <div class="col">
       <Project {...project1} />
     </div>
@@ -172,16 +154,22 @@
     <div class="col">
       <Project {...project3} />
     </div>
+
+    <div class="col">
+      <Project {...project4} />
     </div>
 
     
-  </section>
+  </div>
+
+  
+
 </main>
 
 <footer class="d-flex flex-column justify-content-center align-items-center mt-5">
 
   <h5 class="h-contact pt-3">
-    Contact me at
+    Connect with me at
     <a href="mailto:rdprincipio.jr@gmail.com" class="a-mail">rdprincipio.jr@gmail.com</a>
   </h5>
   <div class="w-25 d-flex justify-content-around">
@@ -199,6 +187,6 @@
     </a>
   </div>
 
-  <p>Copyright &copy; 2020 Roberto Principio Jr</p>
+  <small class="mt-5 mb-3">Copyright &copy; 2021 Roberto Principio Jr</small>
 
 </footer>
