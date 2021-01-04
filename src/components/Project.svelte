@@ -136,7 +136,7 @@ h3, p {
 
       </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-secondary">Close</button>
+        <button type="button" class="btn btn-secondary" on:click={() => (isOpen = false)}>Close</button>
         
     </div>
 </Modal>
