@@ -23,13 +23,12 @@
 .tech-pill {
   background-color: rgb(247, 247, 248);
   color: black;
-  /* background-color: black;
-  color: white; */
+  box-shadow: 2px 4px;
 }
 </style>
 
 
-<span class="badge badge-pill tech-pill ml-1 mr-1 shadow-sm">
+<span class="badge badge-pill tech-pill ml-1 mr-1">
 <i class="devicon-{name}" style="color:{color[name]}"/>
 <span>{name.toUpperCase().split("-")[0]}</span>
 </span>
