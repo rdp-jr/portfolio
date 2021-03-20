@@ -29,7 +29,7 @@
 </style>
 
 
-<span class="badge badge-pill tech-pill ml-1 mr-1">
+<span class="badge badge-pill tech-pill ml-1 mr-1 mb-1">
 <i class="devicon-{name} colored"/>
 <span>{name.toUpperCase().split("-")[0]}</span>
 </span>
