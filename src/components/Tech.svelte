@@ -15,6 +15,7 @@
     "mysql-plain": "#447592",
     "java-plain": "#E51F24",
     "illustrator-plain": "#F67C19",
+    "devicon-php-plain": "purple",
   };
 
 </script>
@@ -23,13 +24,12 @@
 .tech-pill {
   background-color: rgb(247, 247, 248);
   color: black;
-  /* background-color: black;
-  color: white; */
+  box-shadow: 2px 4px;
 }
 </style>
 
 
-<span class="badge badge-pill tech-pill ml-1 mr-1 shadow-sm">
-<i class="devicon-{name}" style="color:{color[name]}"/>
+<span class="badge badge-pill tech-pill ml-1 mr-1 mb-1">
+<i class="devicon-{name} colored"/>
 <span>{name.toUpperCase().split("-")[0]}</span>
 </span>
