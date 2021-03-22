@@ -295,3 +295,7 @@ let particlesConfig = {
   </div>
   <small class="mt-5 mb-3 text-red font-weight-bold">Copyright &copy; 2021 Roberto Principio Jr</small>
 </footer>
+
+
+<img 
+          src="/static/img/whale-2.webp" alt="" style="display: none;"/>    
