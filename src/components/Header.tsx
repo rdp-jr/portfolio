@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <div>
       <h1>
-        <span>Hello there</span>, I'm Roberto Principio Jr
+        <span className="font-bold">Hello there</span>, I'm Roberto Principio Jr
       </h1>
 
       <h2>
