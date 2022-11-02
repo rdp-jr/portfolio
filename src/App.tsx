@@ -1,8 +1,8 @@
 import "./App.css";
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-import { ProjectList } from "./components/ProjectList";
-import { TechStack } from "./components/TechStack";
+import { Footer } from "./components/sections/Footer";
+import { Header } from "./components/sections/Header";
+import { ProjectList } from "./components/sections/ProjectList";
+import { TechStack } from "./components/sections/TechStack";
 
 function App() {
   return (

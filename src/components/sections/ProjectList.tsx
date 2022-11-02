@@ -1,7 +1,7 @@
 import React from "react";
-import { Project } from "./Project";
-import { Project as IProject } from "../types";
-import { PROJECT_LIST } from "../data/projects";
+import { PROJECT_LIST } from "../../data/projects";
+import { Project } from "../Project";
+import { Project as IProject } from "../../types";
 
 export const ProjectList = () => {
   return (
